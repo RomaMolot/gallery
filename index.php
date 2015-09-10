@@ -8,7 +8,7 @@
 <script type="text/javascript" src="lightbox/lightbox.js"></script>
 	<body>
 	<div class="site">
-		<div class="header"></div>
+		<div class="header"><h1>GALLERY</h1></div>
 		<div class="content">	
 			<div class="out_img">
 				<?php
@@ -26,11 +26,15 @@
 					}
 				?>
 			</div>
-			<a href="add_img.php">Download image</a>
-			<a href="add_img.php">Download image</a>
-			
+			<div class="pagination">
+				<ul id="pagination_page">
+					<li class="page 1"><a href="?page=1">1</a></li>
+					<li class="page 2"><a href="?page=2">2</a></li>
+					<li class="page 3"><a href="?page=3">3</a></li>
+				</ul>
+			</div>
+			<div class"add"><a href="add_img.php">ADD AN IMAGE</a></div>	
 		</div>
-		<div class="bottom">Molodyko Roman</div>
-	</div>
+		</div>
 	</body>
 </html>

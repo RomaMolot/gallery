@@ -42,9 +42,19 @@ class IntoDB extends DateBase{
 	*/
 	class OutImg extends DateBase
 	{
-		function out_in_db()
+		function out_in_db($shift, $count)
 		{
-			$sql = "SELECT DISTINCT image_name FROM image";
+			$sql = "SELECT DISTINCT image_name FROM image LIMIT $shift, $count";
+			$array= mysql_query($sql) or die (mysql_error());
+			$array = $this->intoArray($array);
+			return($array);
+		}
+	}
+	class OutId extends DateBase
+	{
+		function out_id($v)
+		{
+			$sql = "SELECT DISTINCT id FROM image WHERE image_name='$v'";
 			$array= mysql_query($sql) or die (mysql_error());
 			$array = $this->intoArray($array);
 			return($array);
