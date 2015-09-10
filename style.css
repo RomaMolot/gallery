@@ -4,19 +4,40 @@ body{
 	height: 100%;
 }
 .header{
-	width:100%;
-	padding:0;
-	display: inline-block;
+	height: 100px;
 }
-h1{
-	font-family: 'Times New Roman', Arial;
-	font-size: 80px;
-	margin: 0px; 
+.out_img{
+	width: 900px;
+	margin-left: 200px;
+
+}
+.site{
+	background-image: url(http://www.takefoto.ru/userfiles/image/Dlya%20Statey/10.12.2012/dof/Hud_object_09-Hi-dof-wallpaper-HD.jpeg);
+	background-repeat: no-repeat;
+	background-size: 1500px 1200px;
+	width: 100%;
 	text-align: center;
-	color: #835C35;
-	text-shadow: 0px 32px 14px rgb(0, 0, 0);
-	letter-spacing: 3px;
+
 }
 .content{
-	height: 900px;
 }
+.image{
+	margin: 20px;
+	display: inline-block;
+	box-shadow:10px 15px 13px rgb(16, 67, 1);
+}
+#lightbox{
+    background-color: rgba(4, 29, 0, 0.69);
+    padding: 10px;
+    border-bottom: 2px solid #666;
+    border-right: 2px solid #666;
+    }
+#lightboxDetails{
+    font-size: 0.8em;
+    padding-top: 0.4em;
+    }
+#lightboxCaption{ float: left; }
+#keyboardMsg{ float: right; }
+ 
+#lightbox img{ border: none; }
+#overlay img{ border: none; }

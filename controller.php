@@ -25,28 +25,29 @@ class IntoDB extends DateBase{
 		return(mysql_insert_id());
 		}
 	}
-	/**
-	* 
-	*/
+	/*
+	
 	class INSERT extends DateBase{
 		function image()
 		{
 			$sql = "SELECT DISTINCT image_name FROM image";
-			//mysql_query($sql) or die (mysql_error());
+			$array= mysql_query($sql) or die (mysql_error());
+			$array = $this->intoArray($array);
+			return($array);
+		}
+	}*/
+	
+	/**
+	* 
+	*/
+	class OutImg extends DateBase
+	{
+		function out_in_db()
+		{
+			$sql = "SELECT DISTINCT image_name FROM image";
 			$array= mysql_query($sql) or die (mysql_error());
 			$array = $this->intoArray($array);
 			return($array);
 		}
 	}
-
-	/**
-	* 
-	*/
-	/*class UPL_IMG extends DateBase
-	{
-		function upl(argument)
-		{
-			# code...
-		}
-	}*/
 ?>
